@@ -12,9 +12,8 @@ Migración a React del sitio del parcial (HTML, CSS y JavaScript nativo). Consum
 - `src/styles/`: los CSS del parcial.
 
 ## Puesta en marcha
-1. Copia `.env.example` como `.env` y revisa `VITE_API_URL` (en local: `http://localhost:3000/api`).
-2. `npm install` y `npm run dev` → http://localhost:5173 (con el backend encendido).
-3. Publicación en Vercel: framework Vite, y variable `VITE_API_URL` = `https://TU-API.onrender.com/api`.
+ → http://localhost:5173 (con el backend encendido).
+ → 
 
 ## Cuentas de prueba (clave 1234)
 `admin@correo.com` · `empleado1@correo.com` · `cliente1@correo.com`
