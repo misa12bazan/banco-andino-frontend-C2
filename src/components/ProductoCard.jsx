@@ -11,7 +11,7 @@ export default function ProductoCard({ producto }) {
       {beneficios.length > 0 && (
         <ul>{beneficios.map(b => <li key={b}>{b}</li>)}</ul>
       )}
-      <Link to="/registro" className="btn btn-outline btn-block">Lo quiero</Link>
+      <Link to={'/registro?producto=' + producto.id} className="btn btn-outline btn-block">{costo > 0 ? 'Lo quiero y pagar' : 'Lo quiero'}</Link>
     </article>
   );
 }

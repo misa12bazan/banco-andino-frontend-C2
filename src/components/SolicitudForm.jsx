@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const VACIO = { nombres: '', apellidos: '', dni: '', telefono: '', tipo_cuenta: 'ahorros', moneda: 'PEN', monto_inicial: '', estado: 'registrado' };
 
-export default function SolicitudForm({ inicial, conEstado = false, deshabilitado = false, textoBoton, alEnviar, children }) {
+export default function SolicitudForm({ inicial, conEstado = false, deshabilitado = false, textoBoton, alEnviar, extra, children }) {
   const [d, setD] = useState({ ...VACIO, ...(inicial || {}) });
   const cambiar = e => setD({ ...d, [e.target.name]: e.target.value });
 
@@ -45,6 +45,7 @@ export default function SolicitudForm({ inicial, conEstado = false, deshabilitad
               </select></div>
           )}
         </div>
+        {extra}
         <p><button type="submit">{textoBoton}</button> {children}</p>
       </fieldset>
     </form>
